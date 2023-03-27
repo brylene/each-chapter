@@ -4,3 +4,10 @@
 # Look in the github README file for example output
 
 p "Enter a list of words separated by spaces:"
+words = gets.chomp.split
+
+words.each do |word|
+  if word.size % 2 == 0
+    puts word
+  end
+end
